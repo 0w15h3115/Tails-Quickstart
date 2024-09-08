@@ -47,4 +47,13 @@ make
 sudo mv PEzor /usr/local/bin/PEzor
 cd ..
 
-echo "All tools installed and Apache server is running!"
+# Install Windscribe CLI
+echo "Installing Windscribe VPN..."
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
+echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
+sudo apt update -y
+sudo apt install windscribe-cli -y
+windscribe login --username your_username --password your_password
+windscribe connect
+
+echo "All tools installed, Windscribe VPN is connected, and Apache server is running!"
