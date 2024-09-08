@@ -2,7 +2,11 @@
 
 # Update and upgrade system packages
 echo "Updating package lists..."
-sudo apt update -y && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
+
+# Install Git
+echo "Installing Git..."
+sudo apt install git -y
 
 # Install Nmap
 echo "Installing Nmap..."
@@ -40,7 +44,7 @@ sudo ./burpsuite.sh
 
 # Install PEzor (from GitHub)
 echo "Installing PEzor..."
-sudo apt install -y git make gcc golang upx
+sudo apt install -y make gcc golang upx
 git clone https://github.com/phra/PEzor.git
 cd PEzor
 make
@@ -49,10 +53,16 @@ cd ..
 
 # Install Windscribe CLI
 echo "Installing Windscribe VPN..."
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
+
+# First, add Windscribe repository key and repository
+wget -q https://repo.windscribe.com/apt/windscribe-repo.gpg.key -O- | sudo tee /etc/apt/trusted.gpg.d/windscribe.asc
 echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
-sudo apt update -y
+
+# Update package list and install Windscribe CLI
+sudo apt update
 sudo apt install windscribe-cli -y
+
+# Login and connect to Windscribe (replace with your actual credentials)
 windscribe login --username your_username --password your_password
 windscribe connect
 
@@ -62,6 +72,6 @@ sudo apt install proxychains4 -y
 
 # Configuring ProxyChains to use Windscribe
 echo "Adding Windscribe to ProxyChains configuration..."
-sudo sed -i 's/^#socks4.*/socks5 127.0.0.1 1080/' /etc/proxychains.conf
+sudo sed -i 's/^#socks4.*/socks5  127.0.0.1 1080/' /etc/proxychains.conf
 
-echo "All tools installed, Windscribe VPN is connected, ProxyChains is configured, and Apache server is running!"
+echo "All tools installed, Windscribe VPN is connected, ProxyChains is configured, Git is installed, and Apache server is running!"
