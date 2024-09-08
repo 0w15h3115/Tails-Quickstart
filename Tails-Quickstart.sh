@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Stop Tor to bypass potential network restrictions
-echo "Stopping Tor service..."
-sudo systemctl stop tor
-
 # Update and upgrade system packages
 echo "Updating package lists..."
 sudo apt update && sudo apt upgrade -y
@@ -73,9 +69,5 @@ cd ..
 # Install ProxyChains
 echo "Installing ProxyChains..."
 sudo apt install proxychains4 -y
-
-# Restart Tor to restore privacy protections
-echo "Restarting Tor service..."
-sudo systemctl start tor
 
 echo "All available tools installed! Apache server is running!"
