@@ -9,7 +9,7 @@ Download the raw file and make it executable (chmod +x) before running in a root
 **All network traffic must go through tor. ICMP and UDP traffic are not available over tor. For example, to do network scan with nmap it must be run with the no ping (-Pn) flag, as well as run through proxychains**
 
 
-<img src="https://kids.kiddle.co/images/1/1a/Miles_%22Tails%22_Prower_Sonic_and_All-Stars_Racing_Transformed.png" width="40" height="40" />
+<img src="https://kids.kiddle.co/images/1/1a/Miles_%22Tails%22_Prower_Sonic_and_All-Stars_Racing_Transformed.png" width="200" height="200" />
 
 ## Liability Disclaimer
 
