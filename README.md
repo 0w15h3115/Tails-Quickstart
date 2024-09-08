@@ -8,7 +8,7 @@
 
 Remember to create an admin password when logging into tails
 
-Download the raw file if git clone gives errors, and make it executable (chmod +x) before running in a root shell.
+Download the raw file if git clone gives errors or use Torify, and make it executable (chmod +x) before running in a non-root shell.
 
 Opening an Apache server on your distribution of tails will poke a hole in your persec
 
