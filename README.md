@@ -1,7 +1,7 @@
 # STILL IN ALPHA
 
 
-Tails Quickstart is a script to install well-loved pentesting tools on Tails OS
+**Tails Quickstart is a script to install well-loved pentesting tools on Tails OS**
 
 
 Remember to create an admin password when logging into tails for the first time, to use root terminal.
