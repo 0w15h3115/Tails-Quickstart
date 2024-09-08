@@ -42,10 +42,12 @@ echo "Installing Burp Suite..."
 wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
 chmod +x burpsuite.sh
 sudo ./burpsuite.sh
+# somewhat-working
 
 # Install Netexec
 sudo apt install pipx git
 pipx ensurepath
 pipx install git+https://github.com/Pennyw0rth/NetExec
+#Not Working
 
-echo "All available tools installed! Apache server is running!"
+echo "Testing with Tails is ready!"
