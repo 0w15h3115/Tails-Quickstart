@@ -1,10 +1,10 @@
 # STILL IN ALPHA
 
 
-Remember to create an admin password when logging into tails for the first time, to use root terminal
+Remember to create an admin password when logging into tails for the first time, to use root terminal.
 
 
-Download the raw file and make it executable (chmod +x) before running in a root shell
+Download the raw file and make it executable (chmod +x) before running in a root shell.
 
 ## Liability Disclaimer
 
