@@ -50,9 +50,8 @@ sudo ./burpsuite.sh
 # somewhat-working
 
 # Install Netexec
-sudo apt install pipx git
-pipx ensurepath
-pipx install git+https://github.com/Pennyw0rth/NetExec
-#Not Working
+torify git clone https://github.com/Pennyw0rth/NetExec
+cd NetExec
+make
 
 echo "Testing with Tails is ready!"
