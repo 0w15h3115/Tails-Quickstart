@@ -22,8 +22,7 @@ sudo apt install apache2 -y
 sudo systemctl start apache2
 sudo systemctl enable apache2
 
-# Install Impacket (may not be available in Tails by default)
-# Fallback: Manual install via pip
+# Install Impacket via pip (available in Tails)
 echo "Installing Impacket..."
 sudo apt install python3-pip -y
 pip3 install impacket
@@ -44,7 +43,7 @@ wget https://portswigger.net/burp/releases/download?product=community&version=20
 chmod +x burpsuite.sh
 sudo ./burpsuite.sh
 
-# PEzor Installation (may require dependencies not available in Tails)
+# Install PEzor (Manual installation, assuming dependencies are available in Tails)
 echo "Installing PEzor..."
 sudo apt install -y make gcc golang upx
 git clone https://github.com/phra/PEzor.git
@@ -53,7 +52,12 @@ make
 sudo mv PEzor /usr/local/bin/PEzor
 cd ..
 
-# Windscribe is not available in Tails and adding repositories can be problematic.
-# You may need to download and configure Windscribe manually or via a separate persistence configuration.
+# Install Netexec (Manual installation since it might not be in default repositories)
+echo "Installing Netexec..."
+git clone https://github.com/mgrosse/netexec.git
+cd netexec
+make
+sudo mv netexec /usr/local/bin/netexec
+cd ..
 
 echo "All available tools installed! Apache server is running!"
