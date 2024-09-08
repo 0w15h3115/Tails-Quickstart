@@ -56,4 +56,12 @@ sudo apt install windscribe-cli -y
 windscribe login --username your_username --password your_password
 windscribe connect
 
-echo "All tools installed, Windscribe VPN is connected, and Apache server is running!"
+# Install ProxyChains
+echo "Installing ProxyChains..."
+sudo apt install proxychains4 -y
+
+# Configuring ProxyChains to use Windscribe
+echo "Adding Windscribe to ProxyChains configuration..."
+sudo sed -i 's/^#socks4.*/socks5 127.0.0.1 1080/' /etc/proxychains.conf
+
+echo "All tools installed, Windscribe VPN is connected, ProxyChains is configured, and Apache server is running!"
