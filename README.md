@@ -3,7 +3,7 @@
 Remember to create an admin password when logging into tails for the first time, to use root terminal.
 
 
-Download the raw file and make it executable (chmod +x) before running in a root shell.
+Download the raw file if git clone gives errors, and make it executable (chmod +x) before running in a root shell.
 
 
 **All network traffic must go through tor. ICMP and UDP traffic are not available over tor. For example, to do network scan with nmap it must be run with the no ping (-Pn) flag, as well as run through proxychains**
