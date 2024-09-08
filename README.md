@@ -1,3 +1,6 @@
+# STILL IN ALPHA
+
+
 remember to create an admin password when logging in to use sudo in the terminal
 
 
