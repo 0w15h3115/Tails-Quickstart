@@ -45,19 +45,6 @@ echo "Installing UPX from local file..."
 tar -xf /media/usb/upx-3.96-amd64_linux.tar.xz
 sudo mv upx-3.96-amd64_linux/upx /usr/local/bin/
 
-# Install PEzor
-echo "Installing PEzor..."
-# If network issues prevent cloning, ensure you've downloaded and transferred manually
-if ! git clone https://github.com/phra/PEzor.git; then
-  echo "Network issues encountered. Ensure you've downloaded PEzor manually."
-  echo "Unzip and install from the local file if necessary."
-  exit 1
-fi
-cd PEzor
-make
-sudo mv PEzor /usr/local/bin/PEzor
-cd ..
-
 # Install Netexec
 echo "Installing Netexec..."
 git clone https://github.com/mgrosse/netexec.git
