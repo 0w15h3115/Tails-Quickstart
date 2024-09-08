@@ -37,21 +37,21 @@ sudo apt install build-essential -y
 
 # Install Sliver
 echo "Installing Sliver..."
-sudo wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
+torify wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
 chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
 # Not Working
 
 # Download and Install Burp Suite Community Edition
 echo "Installing Burp Suite..."
-sudo wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
+torify wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
 sudo chmod +x burpsuite.sh
 sudo ./burpsuite.sh
 
 
 # Install Netexec
-torify git clone https://github.com/Pennyw0rth/NetExec
-cd NetExec
-make
+torify apt install pipx git
+pipx ensurepath
+torify pipx install git+https://github.com/Pennyw0rth/NetExec
 
 echo "Testing with Tails is ready!"
