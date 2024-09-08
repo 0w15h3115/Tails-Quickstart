@@ -12,7 +12,7 @@ Disclaimer of Liability and Responsibility
 
 This script (hereinafter referred to as “the Script”) is provided for educational purposes and for legal penetration testing or system security enhancement only. By using the Script, you agree to the following terms:
 
-1. Authorized Use Only
+1. Authorized Use Only: 
 You acknowledge and agree that the Script is to be used solely on systems and networks that you either own or have explicit permission to access. Unauthorized use of this Script on third-party systems, networks, or devices is strictly prohibited and is considered illegal under applicable laws, including but not limited to computer fraud and abuse laws.
 	
 
