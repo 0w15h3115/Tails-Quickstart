@@ -28,7 +28,7 @@ sudo systemctl enable apache2
 
 # Install Impacket via pip
 echo "Installing Impacket..."
-apt install python3-impacket
+sudo apt install python3-impacket
 # Working
 
 # Install Build-Essential for compiling software
@@ -37,17 +37,17 @@ sudo apt install build-essential -y
 
 # Install Sliver
 echo "Installing Sliver..."
-wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
+sudo wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
 chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
 # Not Working
 
 # Download and Install Burp Suite Community Edition
 echo "Installing Burp Suite..."
-wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
-chmod +x burpsuite.sh
+sudo wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
+sudo chmod +x burpsuite.sh
 sudo ./burpsuite.sh
-# somewhat-working
+
 
 # Install Netexec
 torify git clone https://github.com/Pennyw0rth/NetExec
