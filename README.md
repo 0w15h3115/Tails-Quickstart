@@ -1,7 +1,7 @@
 # STILL IN ALPHA
 
 
-**Test with Tails is a script to install well-loved pentesting tools on Tails OS (Nmap, Ncat, Impacket, Sliver, Netexec)**
+**Test with Tails is a script to install well-loved pentesting tools on Tails OS (Nmap, Ncat, Impacket, Sliver, Netexec, Burp Suite)**
 
 
 Remember to create an admin password when logging into tails for the first time, to use root terminal.
