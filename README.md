@@ -1,0 +1,1 @@
+remember to creat an admin password when logging in to use sudo in the terminal
