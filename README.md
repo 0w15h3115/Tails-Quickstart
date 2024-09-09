@@ -1,4 +1,4 @@
-# STILL IN ALPHA
+# Test with Tails | Beta
 
 
 **Test with Tails is a script to install well-loved pentesting tools on Tails OS (Nmap, Ncat, Impacket, Sliver, Netexec, Burp Suite)**
