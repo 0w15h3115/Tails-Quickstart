@@ -5,11 +5,6 @@ echo "Updating package lists... This may take a while... "
 sudo apt update && sudo apt upgrade -y
 # Working
 
-
-# install and use Zsh
-sudo apt install zsh -y
-zsh
-
 # Install Pip
 sudo apt install python3-pip pipx -y
 # Working
