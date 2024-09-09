@@ -41,7 +41,7 @@ echo "Installing Sliver..."
 torify wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
 chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
-# Working
+# Working somewhat
 
 
 # Download and Install Burp Suite Community Edition
@@ -56,5 +56,6 @@ pipx ensurepath
 torify wget https://github.com/Pennyw0rth/NetExec -O netexec
 chmod +x netexec
 sudo mv netexec /usr/local/bin/netexec
+# working somewhat
 
 echo "Tails ready to Test!"
