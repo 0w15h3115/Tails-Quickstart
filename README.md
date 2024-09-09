@@ -3,12 +3,12 @@
 
 **Test with Tails is a script to install well-loved pentesting tools on Tails OS (Nmap, Ncat, Impacket, Sliver, Netexec, Burp Suite)**
 
-**Use Non-Admin Shell when running script**
+**Must be run as root**
 
 
 Remember to create an admin password when logging into tails
 
-Download the raw file if git clone gives errors or use wget, and make it executable (chmod +x) before running in a non-root shell.
+Download the raw file if git clone gives errors or use wget, and make it executable (chmod +x) before running in a root shell.
 
 Opening an Apache server on your distribution of tails will poke a hole in your persec
 
