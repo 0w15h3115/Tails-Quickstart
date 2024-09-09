@@ -7,12 +7,12 @@ sudo apt update && sudo apt upgrade -y
 
 
 # install and use Zsh
-sudo apt install zsh
+sudo apt install zsh -y
 zsh
 
 # Install Pip
 sudo apt install python3-pip pipx -y
-#Working
+# Working
 
 # Install Nmap (includes Ncat)
 echo "Installing Nmap..."
@@ -35,12 +35,12 @@ sudo apt install python3-impacket
 echo "Installing build-essential..."
 sudo apt install build-essential -y
 
-# Install Sliver
+# Install Sliver C2
 echo "Installing Sliver..."
 torify wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
 chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
-# Not Working
+
 
 # Download and Install Burp Suite Community Edition
 echo "Installing Burp Suite..."
