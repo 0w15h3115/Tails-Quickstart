@@ -38,7 +38,7 @@ sudo apt install build-essential -y
 
 # Install Sliver C2
 echo "Installing Sliver..."
-torify wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
+sudo -u amnesia && torify wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
 chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
 # Working somewhat
@@ -46,14 +46,14 @@ sudo mv sliver-server /usr/local/bin/sliver-server
 
 # Download and Install Burp Suite Community Edition
 echo "Installing Burp Suite..."
-torify wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
+sudo -u amnesia && torify wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
 sudo chmod +x burpsuite.sh
 # will need to run installer at later time (./burpsuite.sh)
 
 
 # Install Netexec
 pipx ensurepath
-torify wget https://github.com/Pennyw0rth/NetExec -O netexec
+sudo -u amnesia torify wget https://github.com/Pennyw0rth/NetExec -O netexec
 chmod +x netexec
 sudo mv netexec /usr/local/bin/netexec
 # working somewhat
