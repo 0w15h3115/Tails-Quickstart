@@ -25,7 +25,7 @@ sudo systemctl enable apache2
 
 # Install Impacket via pip
 echo "Installing Impacket..."
-sudo apt install python3-impacket
+sudo apt install python3-impacket -y
 # Working
 
 # Install Build-Essential for compiling software
