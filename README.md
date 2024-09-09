@@ -3,6 +3,8 @@
 
 **Test with Tails is a script to install well-loved pentesting tools on Tails OS (Nmap, Ncat, Impacket, Sliver, Netexec, Burp Suite)**
 
+**Deals with the quirks of installing these tools through ONLY tor, including permissions issues**
+
 **Must be run as root**
 
 
