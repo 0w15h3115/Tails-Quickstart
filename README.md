@@ -5,7 +5,7 @@
 
 **Deals with the quirks of installing these tools through ONLY tor, including permissions issues**
 
-**Must be run as root**
+**Must be run in root terminal**
 
 
 Remember to create an admin password when logging into tails
@@ -13,6 +13,8 @@ Remember to create an admin password when logging into tails
 Download the raw file if git clone gives errors or use wget, and make it executable (chmod +x) before running in a root shell.
 
 Opening an Apache server on your distribution of tails will poke a hole in your persec
+
+Will need to use burpsuite gui installer downloaded by the script after running
 
 
 **All network traffic must go through tor. ICMP and UDP traffic are not available over tor. For example, to perform a network scan with nmap it must be run with the no ping (-Pn) flag, as well as run through proxychains/Torify**
