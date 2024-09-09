@@ -2,7 +2,8 @@
 
 # Update and upgrade system packages
 echo "Updating package lists... This may take a while... "
-sudo apt update && sudo apt upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
 # Working
 
 # Install Pip
@@ -11,6 +12,7 @@ sudo apt install python3-pip pipx -y
 
 # Install NeoVim
 sudo apt install neovim -y
+# Working
 
 # Install Nmap (includes Ncat)
 echo "Installing Nmap..."
@@ -41,13 +43,12 @@ chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
 # Working somewhat
 
-
 # Download and Install Burp Suite Community Edition
 echo "Installing Burp Suite..."
-su amnesia torify wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
+sudo -u amnesia torify wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
 sudo chmod +x burpsuite.sh
 # will need to run installer at later time (./burpsuite.sh)
-
+# Working somewhat
 
 # Install Netexec
 pipx ensurepath
