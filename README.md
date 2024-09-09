@@ -13,7 +13,7 @@ Download the raw file if git clone gives errors or use wget, and make it executa
 Opening an Apache server on your distribution of tails will poke a hole in your persec
 
 
-**All network traffic must go through tor. ICMP and UDP traffic are not available over tor. For example, to perform a network scan with nmap it must be run with the no ping (-Pn) flag, as well as run through proxychains**
+**All network traffic must go through tor. ICMP and UDP traffic are not available over tor. For example, to perform a network scan with nmap it must be run with the no ping (-Pn) flag, as well as run through proxychains/Torify**
 
 
 <img src="https://kids.kiddle.co/images/1/1a/Miles_%22Tails%22_Prower_Sonic_and_All-Stars_Racing_Transformed.png" width="200" height="200" />
