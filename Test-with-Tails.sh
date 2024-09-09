@@ -11,6 +11,9 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip pipx -y
 # Working
 
+# Install NeoVim
+sudo apt install neovim -y
+
 # Install Nmap (includes Ncat)
 echo "Installing Nmap..."
 sudo apt install nmap -y
@@ -31,24 +34,27 @@ sudo apt install python3-impacket -y
 # Install Build-Essential for compiling software
 echo "Installing build-essential..."
 sudo apt install build-essential -y
+# Working
 
 # Install Sliver C2
 echo "Installing Sliver..."
 torify wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
 chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
+# Working
 
 
 # Download and Install Burp Suite Community Edition
 echo "Installing Burp Suite..."
 torify wget "https://portswigger.net/burp/releases/download?product=community&version=2023.6.1&type=Linux" -O burpsuite.sh
 sudo chmod +x burpsuite.sh
-sudo ./burpsuite.sh
+# will need to run installer at later time (./burpsuite.sh)
 
 
 # Install Netexec
-sudo apt install pipx git
 pipx ensurepath
-torify pipx install git+https://github.com/Pennyw0rth/NetExec
+torify wget https://github.com/Pennyw0rth/NetExec -O netexec
+chmod +x netexec
+sudo mv netexec /usr/local/bin/netexec
 
 echo "Tails ready to Test!"
