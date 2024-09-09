@@ -50,7 +50,7 @@ sudo ./burpsuite.sh
 
 
 # Install Netexec
-torify apt install pipx git
+sudo apt install pipx git
 pipx ensurepath
 torify pipx install git+https://github.com/Pennyw0rth/NetExec
 
