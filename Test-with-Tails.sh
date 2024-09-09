@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo echo "Logged in"
+
 # Update and upgrade system packages
 echo "Updating package lists... This may take a while... "
 sudo apt update && sudo apt upgrade -y
