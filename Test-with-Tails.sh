@@ -54,4 +54,4 @@ torify apt install pipx git
 pipx ensurepath
 torify pipx install git+https://github.com/Pennyw0rth/NetExec
 
-echo "Testing with Tails is ready!"
+echo "Tails ready to Test!"
