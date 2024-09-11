@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update and upgrade system packages
-echo "Updating package lists... This may take a while... "
+echo "Ready... Set... Go! "
 sudo apt update -y
 sudo apt upgrade -y
 # Working
@@ -56,5 +56,9 @@ sudo -u amnesia torify wget https://github.com/Pennyw0rth/NetExec -O netexec
 chmod +x netexec
 sudo mv netexec /usr/local/bin/netexec
 # working somewhat
+
+# Install Proxychains
+sudo apt install proxychains -y
+# Working
 
 echo "Tails ready to Test!"
