@@ -41,7 +41,7 @@ echo "Installing Sliver..."
 sudo -u amnesia torify wget https://github.com/BishopFox/sliver/releases/latest/download/sliver-server_linux -O sliver-server
 chmod +x sliver-server
 sudo mv sliver-server /usr/local/bin/sliver-server
-# Working somewhat
+# Working
 
 # Download and Install Burp Suite Community Edition
 echo "Installing Burp Suite..."
@@ -54,7 +54,6 @@ sudo chmod +x burpsuite.sh
 pipx ensurepath
 sudo -u amnesia torify wget https://github.com/Pennyw0rth/NetExec -O netexec
 chmod +x netexec
-sudo mv netexec /usr/local/bin/netexec
 # working somewhat
 
 # Install Proxychains
